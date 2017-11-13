@@ -1,0 +1,9 @@
+Set HTTP_PROXY=http://dfwproxy.ent.covance.com:80
+
+
+
+npm install -g @angular/cli
+
+cd C:\Angular\MyFirstAngularApp
+
+ng new MyFirstAngularApp
