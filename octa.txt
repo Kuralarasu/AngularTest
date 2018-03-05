@@ -1,0 +1,9 @@
+suganya.kandhasamy
+
+https://tcskuralarasu-admin.okta.com/
+
+https://tcskuralarasu.okta.com/
+
+00MR98ynz556v7vsHp3qUM_t265hz31jEiDTReuG8u
+
+npm i -D @angular-devkit/core
