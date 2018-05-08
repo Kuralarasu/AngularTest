@@ -1,0 +1,94 @@
+Random generator
+
+function stringGen()
+{
+   var input=document.getElementById("num").value;
+   var possible="abcdefghijklmnopqrstuvwxyz";
+   var output='9';
+   for(var i=1;i<input;i++){
+    output += possible.charAt(Math.floor(Math.random() * possible.length));
+   }
+   document.getElementById("result").innerHTML =output;
+ return output;}
+
+
+
+
+
+
+Simple Calculator
+
+<HEAD>
+    <TITLE> Simple Calculation</TITLE>
+
+</HEAD>
+
+<BODY>
+    <FORM NAME="myForm">
+        <TABLE BORDER=2>
+            <TR>
+                <TD align="center">
+                    <INPUT TYPE="text" ID="screen" NAME="screen" style="width:99%"><br>
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    <INPUT TYPE="button" NAME="7" onclick="update(7)" >
+                    <INPUT TYPE="button" NAME="8" onclick="update(8)">
+                    <INPUT TYPE="button" NAME="9" onclick="update(9)">
+                    <INPUT TYPE="button" NAME="+" onclick="update('+')">
+                    <br>
+                    <INPUT TYPE="button" NAME="4" onclick="update(4)">
+                    <INPUT TYPE="button" NAME="5" onclick="update(5)">
+                    <INPUT TYPE="button" NAME="6" onclick="update(6)">
+                    <INPUT TYPE="button" NAME="-" onclick="update('-')">
+                    <br>
+                    <INPUT TYPE="button" NAME="1" onclick="update(1)">
+                    <INPUT TYPE="button" NAME="2" onclick="update(2)">
+                    <INPUT TYPE="button" NAME="3" onclick="update(3)">
+                    <INPUT TYPE="button" NAME="*" onclick="update('*')">
+                    <br>
+                    <INPUT TYPE="button" NAME="c" onclick="reset();">
+                    <INPUT TYPE="button" NAME="0" onclick="update(0)">
+                    <INPUT TYPE="button" NAME="=" onclick="result();">
+                    <INPUT TYPE="button" NAME="/" onclick="update('/')">
+                </TD>
+            </TR>
+        </TABLE>
+    </FORM>
+    <script type="text/javascript" src="index.js"></SCRIPT>
+</BODY>
+
+</HTML>
+
+
+
+
+JS
+function update(value) {
+      document.getElementById("screen").value += value;
+}
+
+function result() {
+   document.getElementById("screen").value = eval(document.getElementById("screen").value);
+}
+
+function reset() {
+   document.getElementById("screen").value = '';
+}
+
+
+
+
+User Registration
+
+function myFunction() {
+ var name=document.getElementById("myname").value;
+ var phone=document.getElementById("myphone").value;
+ var country=document.getElementById("mycontry").value;
+ var mail=document.getElementById("mymail").value;
+ var output=name + ','+phone+ ','+country+ ','+mail;
+  alert(output);
+ return (output);
+}
+
